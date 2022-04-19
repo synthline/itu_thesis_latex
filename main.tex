@@ -1,0 +1,59 @@
+
+% SELECT OR DEFINE YOUR STYLE OF CHOICE
+\input{config/style1}
+%\input{config/style2}
+%\input{config/style3}
+
+\input{config/settings} % load packages and define settings
+\input{config/commands} % define helpful commands
+
+\setcounter{secnumdepth}{5}
+\graphicspath{{figs/}} % add image folder = no need to add path if image is included
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%-------------------------------------------------------
+%	TITLE PAGE
+%-------------------------------------------------------
+\hypersetup{pageanchor=false}
+\input{titlepage} % customized titlepage
+\hypersetup{pageanchor=true}
+
+%------------------------------------------------------
+%	ABSTRACT
+%------------------------------------------------------
+\pagenumbering{roman}
+\input{ch/abstract}
+
+%-------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%-------------------------------------------------------
+\clearpage
+\setcounter{tocdepth}{3} % Set the depth of the table of contents to show sections and subsections only
+\tableofcontents % Print the table of contents
+%\listoffigures % Print the list of figures (optional, only if you have many figures)
+%\listoftables % Print the list of tables (optional, only if you have many tables)
+%\lstlistoflistings
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}
+\input{ch/introduction}
+\input{ch/methods} 
+\input{ch/experiments}
+\input{ch/conclusion}
+
+%--------------------------------------------------------------
+%	BIBLIOGRAPHY
+%--------------------------------------------------------------
+\addcontentsline{toc}{chapter}{Literature}
+%\bibliographystyle{chicago} % author style
+\bibliographystyle{abbrv}  % I prefer the numbers
+%\bibliographystyle{plain}  
+\bibliography{references}
+
+%--------------------------------------------------------------
+%	APPENDICES
+%--------------------------------------------------------------
+\input{ch/appendix}
+
+\end{document}

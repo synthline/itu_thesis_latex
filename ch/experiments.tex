@@ -1,0 +1,57 @@
+\chapter{Experiments}
+
+In this chapter \ldots 
+
+\section{Quantitative Quality Measures}
+\label{sec:measures}
+
+example equation
+\begin{align}
+    MSE(a,b) &= \frac{1}{N}\sum_{n=1}^N||a_n-b_n||_2^2
+    \label{eq:mse}
+\end{align}
+% % features, model, evaluation
+
+
+\section{Classification X}
+
+The model described in Sec.~\ref{sec:fancy_procedure} \ldots 
+
+\ldots implementation is based on xy
+
+measure for evaluation Sec.~\ref{sec:measures}, MSE \eqref{eq:mse}
+
+
+In Fig.~\ref{fig:subfigs} it can be seen \ldots 
+Fig.~\ref{fig:subfigs}\subref{subfig:input} the original image, \ldots Fig.~\ref{fig:subfigs}\subref{subfig:detect} \ldots 
+
+\begin{figure}[htb] % "H"ere, "T"op "B"ottom
+	\centering
+	\subfloat[original]{\includegraphics[width=0.3\textwidth]{dummy_img} \label{subfig:input}}
+	\subfloat[detected]{\includegraphics[width=0.25\textwidth]{dummy_img} \label{subfig:detect}}
+	\\ % new line if needed
+	\subfloat[example 2]{\includegraphics[width=0.48\textwidth]{dummy_img}}
+	\subfloat[estimated]{\includegraphics[width=0.48\textwidth]{dummy_img} \label{subfig:ex2}}
+	\caption{%
+		There should be a short description here. More details in the text: \protect\subref{subfig:input} original image, \protect\subref{subfig:detect} 
+		\textcolor{red}{2DO: adapt content, size and description. You can put it all in one row, too.}
+	}
+	\label{fig:subfigs}
+\end{figure}
+
+
+
+Results shown in Tab.~\ref{tab:mse_results}. 
+
+\begin{table}[htb]
+	\centering
+	\caption{Best description ever.} % CAPTION OF TABLES ON TOP
+	\label{tab:mse_results}
+	\begin{tabular}{cc}
+		\toprule 
+		M1 & M2 \\ \midrule
+		0.5  & \textbf{0}\\
+		0.2 &  2\\
+		\bottomrule
+	\end{tabular}
+\end{table}
